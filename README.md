@@ -26,8 +26,30 @@ basic-alu-verilog/
 * result (8-bit) – Output of the selected operation.
 * zero_flag (1-bit) – Becomes 1 if result == 0, else 0.
 # Operation Table
-![Image](https://github.com/user-attachments/assets/ef66062b-d29f-444d-a037-61bdfc8e6a06)
-# RTL Schematic
+
+### Sample Output Timing:
+
+| Time (ns) | x_in | y_out |
+|-----------|------|--------|
+| 10        | 1    | 1      |
+| 20        | 2    | 4      |
+| 30        | 3    | 8      |
+| 40        | 4    | 12     |
+| 50        | 5    | 16     |
+| 60        | 0    | 14     |
+| 70        | 0    | 5      |
+| 80        | 0    | 0      |
+
+## 🧪 How to Simulate
+
+You can simulate this project using any Verilog simulator (e.g., **ModelSim**, **Vivado**, or **Icarus Verilog**).
+
+### Icarus Verilog + GTKWave
+
+```bash
+iverilog -o fir_test fir_filter.v tb_fir_filter.v
+vvp fir_test
+gtkwave dump.
 
 
 
