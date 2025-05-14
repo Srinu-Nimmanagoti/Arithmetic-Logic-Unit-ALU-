@@ -6,6 +6,7 @@ fir_filter_project/
 ├── tb_fir_filter.v       # Testbench
 └── README.md             # Project description
 
+
 # Components
 ## Inputs:
 * a (8-bit) – First operand for arithmetic/logical operations.
