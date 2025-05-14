@@ -9,28 +9,24 @@ fir_filter_project/
 
 ```
 
-# Components
-## Inputs:
+### Components
+### Inputs:
 * a (8-bit) – First operand for arithmetic/logical operations.
 ** b (8-bit) – Second operand (except for NOT, which uses only a).
 * op (3-bit) – Operation selector (determines which operation to perform).
 ## Output:
 * result (8-bit) – Output of the selected operation.
 * zero_flag (1-bit) – Becomes 1 if result == 0, else 0.
-# Operation Table
+### Operation Table
+| Op Code | Operation | Description          | Example A | Example B | Result   | Zero Flag |
+|---------|-----------|----------------------|-----------|-----------|----------|-----------|
+| `000`   | `ADD`     | A + B                | `8'h0A`   | `8'h14`   | `8'h1E`  | `0`       |
+| `001`   | `SUB`     | A - B                | `8'h1E`   | `8'h0F`   | `8'h0F`  | `0`       |
+| `010`   | `AND`     | A & B (bitwise)      | `8'b1010` | `8'b1100` | `8'b1000`| `0`       |
+| `011`   | `OR`      | A \| B (bitwise)     | `8'b1010` | `8'b1100` | `8'b1110`| `0`       |
+| `100`   | `NOT`     | ~A (bitwise)         | `8'b1010` | `-`       | `8'b0101`| `0`       |
+| `xxx`   | `-`       | Outputs zero         | Any       | Any       | `8'h00`  | `1`       |
 
-### Sample Output Timing:
-
-| Time (ns) | x_in | y_out |
-|-----------|------|--------|
-| 10        | 1    | 1      |
-| 20        | 2    | 4      |
-| 30        | 3    | 8      |
-| 40        | 4    | 12     |
-| 50        | 5    | 16     |
-| 60        | 0    | 14     |
-| 70        | 0    | 5      |
-| 80        | 0    | 0      |
 
 ## 🧪 How to Simulate
 
