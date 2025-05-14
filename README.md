@@ -3,10 +3,9 @@ This Verilog implementation presents a basic 8-bit Arithmetic Logic Unit (ALU) s
 ## 📁 Project Structure
 
 fir_filter_project/
-├── fir_filter.v
-├── tb_fir_filter.v
-└── README.md
-
+├── fir_filter.v # FIR Filter Verilog module
+├── tb_fir_filter.v # Testbench for simulation
+└── README.md # Documentation****
 # Components
 ## Inputs:
 * a (8-bit) – First operand for arithmetic/logical operations.
