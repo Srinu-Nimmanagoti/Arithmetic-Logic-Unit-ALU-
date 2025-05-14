@@ -1,4 +1,4 @@
-#🗒️ Arithmetic-Logic-Unit-(ALU)-Verilog | Vivado
+# 🗒️ Arithmetic-Logic-Unit-(ALU)-Verilog | Vivado
 This Verilog implementation presents a basic 8-bit Arithmetic Logic Unit (ALU) supporting five core operations: addition (ADD), subtraction (SUB), bitwise AND, OR, and NOT. The design takes two 8-bit inputs (a and b) and a 3-bit operation code (op) to select the desired operation, producing an 8-bit result and a zero_flag that indicates when the output equals zero. The testbench verifies all operations with clear decimal and binary test cases, demonstrating correct functionality for arithmetic calculations (10+20=30) and logical operations (10101010 AND 11001100=10001000), including zero detection (100-100 sets zero_flag). 
 # Components
 # Inputs:
