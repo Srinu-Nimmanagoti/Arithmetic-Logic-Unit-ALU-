@@ -8,24 +8,7 @@ op (3-bit) – Operation selector (determines which operation to perform).
 # Outputs:
 result (8-bit) – Output of the selected operation.
 zero_flag (1-bit) – Becomes 1 if result == 0, else 0.
-Operation Table
-The ALU supports the following operations:
-
-Operation	Op Code (3-bit)	Description	Example (a=10, b=20)
-ADD	000	a + b	10 + 20 = 30
-SUB	001	a - b	30 - 15 = 15
-AND	010	a & b (bitwise)	1010 & 1100 = 1000
-OR	011	`a	b` (bitwise)	`1010	1100 = 1110`
-NOT	100	~a (bitwise NOT)	~1010 = 0101
-Default	Others	Outputs 0	op=101 → result=0
-🕹️ Operation Matrix
-Command	Secret Code	Action	Example Showdown
-ADD	000	Data A + Data B	8 + 8 = 16
-SUB	001	Data A - Data B	16 - 4 = 12
-AND	010	Bitwise AND (Mask Mode)	1100 & 1010 = 1000
-OR	011	Bitwise OR (Fusion Mode)	`1100	1010 = 1110`
-NOT	100	Bitwise NOT (Inception)	~1100 = 0011
-(Yes, that NOT operation is basically the ALU saying "Plot twist!" to your bits)
+# Operation Table
 
 🚀 Launch Sequence
 bash
