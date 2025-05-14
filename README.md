@@ -9,47 +9,5 @@ op (3-bit) – Operation selector (determines which operation to perform).
 result (8-bit) – Output of the selected operation.
 zero_flag (1-bit) – Becomes 1 if result == 0, else 0.
 # Operation Table
-
-🚀 Launch Sequence
-bash
-# 1️⃣ Beam down the code
-git clone https://github.com/yourusername/BitBender-3000.git
-cd BitBender-3000
-
-# 2️⃣ Initiate quantum simulation
-./launch_sequence.sh
-
-# 3️⃣ For the full light show (requires GTKWave)
-./light_driver.sh --party-mode
-Sample Output:
-
-⚡ POWERING UP BITBENDER 3000 ⚡
-
-🔢 Arithmetic Arena:
-   ADD: 8 + 8 = 16 (Zero? ❌)  
-   SUB: 16 - 4 = 12 (Zero? ❌)
-
-🎭 Logic Theater:
-   AND: 1100 & 1010 = 1000  
-   OR:  1100 | 1010 = 1110  
-   NOT: ~1100 = 0011 (Mind=Blown!)
-
-🎯 Zero Moment: 8 - 8 = 0 (Zero? ✅👁️)
-💎 Why Engineers Love This
-• Zero-Drama Flag - Knows when to say "0"
-• Bitwise Ninja - AND/OR/NOT moves smoother than a hacker movie
-• Plug-and-Play - Fits in any CPU design like the last puzzle piece
-• Comment-Rich - No hieroglyphics here!
-
-🔮 Roadmap to World Domination
-XOR Gate - For that extra spice
-
-Shift Operations - Make bits boogie left and right
-
-Neon Waveforms - Because debug logs deserve glam too
-
-(Tag your feature requests with #BitBenderWishlist)
-
-📜 License
-MIT Licensed - Because great power shouldn't come with great paperwork.
+![Image](https://github.com/user-attachments/assets/ef66062b-d29f-444d-a037-61bdfc8e6a06)
 
