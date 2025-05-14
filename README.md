@@ -3,9 +3,9 @@ This Verilog implementation presents a basic 8-bit Arithmetic Logic Unit (ALU) s
 # Components
 ## Inputs:
 * a (8-bit) – First operand for arithmetic/logical operations.
-* b (8-bit) – Second operand (except for NOT, which uses only a).
+** b (8-bit) – Second operand (except for NOT, which uses only a).
 * op (3-bit) – Operation selector (determines which operation to perform).
-# Outputs:
+## Outputs:
 result (8-bit) – Output of the selected operation.
 zero_flag (1-bit) – Becomes 1 if result == 0, else 0.
 # Operation Table
